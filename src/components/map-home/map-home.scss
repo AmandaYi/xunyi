@@ -1,0 +1,18 @@
+map-home {
+    display: block;
+    height: r(1134px);
+    .map-home{
+        height: r(1134px);
+        display: block;
+        #content_home{
+            position: fixed;
+            z-index: 9999;
+            width: r(750px);
+            // 这里可以减去头部的50px和底部的50px;
+            // 满屏布局,头部和底部采用定位
+            height: r(1134px);
+            // background-color:#ff0; 
+        }
+    }
+   
+}

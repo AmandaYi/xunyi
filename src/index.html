@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
-  <title>Ionic App</title>
+  <title>亲密定位APP</title>
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
@@ -14,7 +15,11 @@
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 动态改变fontSize -->
+  <script type="text/javascript" src="./assets/js/screencom.min.js"></script>
 
+ <!-- 高德定位引入文件API -->
+ <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=9a876a506c866879d228eacf7d21a0b5"></script> 
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
@@ -30,6 +35,7 @@
   <link href="build/main.css" rel="stylesheet">
 
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
@@ -41,9 +47,10 @@
   <!-- The vendor js is generated during the build process
        It contains all of the dependencies in node_modules -->
   <script src="build/vendor.js"></script>
-
+ 
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
 </body>
+
 </html>

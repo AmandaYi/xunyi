@@ -14,7 +14,10 @@ $app-direction: ltr;
 
 @import "ionic.globals";
 
+@import "./base.scss";
 
+// 统一样式适配器
+@import "./ionicApi.scss";
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
