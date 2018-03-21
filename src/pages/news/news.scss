@@ -1,3 +1,33 @@
 page-news {
-
+    .list-news{
+        display: block;
+        width: 100%;
+        .item{
+           position: relative;
+           margin-bottom: r(22px);
+           padding: r(22px);
+            .list-img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                border-top-left-radius: r(30px);
+                border-top-right-radius: r(30px);
+            }
+            .item-title{
+                position: absolute;
+                top: r(30px);
+                padding-left: r(22px);
+                margin-top: r(22px);
+              
+                margin-bottom: 0;
+                font-size: r(45px);
+            }
+            .item-desc{
+                position: absolute;
+                top: r(150px);
+                font-size: r(35px);
+                padding-left: r(22px);
+            }
+        }
+    }
 }

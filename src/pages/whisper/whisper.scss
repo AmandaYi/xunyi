@@ -1,3 +1,40 @@
 page-whisper {
-
+ 
+.list-whisper{
+    font-size: r(36px);
+        padding-left: r(18px);
+        padding-right: r(18px);
+       
+        .item-left{
+           width: 100%;
+           height: auto;
+            border-radius: r(20px);
+            margin-bottom: r(22px);
+          
+            .text-left{
+                padding:r(20px);
+                background: #fff;
+                color:#222;
+            }
+        }
+        .item-right{
+           
+            width: 100%;
+            height: auto;
+            margin-bottom: r(22px);
+            padding-left: r(200px);
+            
+          
+           
+            .text-right{
+               background: #00bbee;
+               color:#222;
+               padding:r(20px);
+              
+                // float: left;
+                // display: flex;
+                // flex-wrap:wrap;
+            }
+        }       
+    }      
 }

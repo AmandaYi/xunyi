@@ -21,20 +21,21 @@ import { PersonalPage } from "../personal/personal";
 export class TabsPage {
 
   constructor(private navCtrl: NavController) {
+   
   }
 
   @ViewChild('myTabs') tabRef;
 
 
   // 页面绑定
-  tab1Root = HomePage;
+  tab1Root = PersonalPage;
   tab2Root = NewsPage;
   tab3Root = WhisperPage;
   tab4Root = PersonalPage;
 
   // 页面初始化
   switchTabs() {
-    this.navCtrl.parent.select(2);
+    this.navCtrl.push(NewsPage);
   }
   
 
