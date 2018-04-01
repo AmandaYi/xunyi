@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NewsPage } from '../pages/news/news';
-import { WhisperPage } from '../pages/whisper/whisper';
+import { ChatPage } from '../pages/chat/chat';
 import { PersonalPage } from '../pages/personal/personal';
 
 import { ComponentsModule } from '../components/components.module';
@@ -18,7 +18,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     TabsPage,
     HomePage,
     NewsPage,
-    WhisperPage,
+    ChatPage,
     PersonalPage
   ],
   imports: [
@@ -32,7 +32,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     TabsPage,
     HomePage,
     NewsPage,
-    WhisperPage,
+    ChatPage,
     PersonalPage
   ],
   providers: [
