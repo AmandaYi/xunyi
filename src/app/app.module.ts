@@ -1,39 +1,46 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { NewsPage } from '../pages/news/news';
-import { ChatPage } from '../pages/chat/chat';
+// 互相情侣定位
+import { LocationPage } from '../pages/location/location';
+// 恋爱小知识
+import { KnowledgePage } from '../pages/knowledge/knowledge';
+// 聊天功能
+import { ChatroomPage } from '../pages/chatroom/chatroom';
+// 机器人聊天
+import { RobotPage } from '../pages/robot/robot';
+// 个人中心
 import { PersonalPage } from '../pages/personal/personal';
-
-import { ComponentsModule } from '../components/components.module';
+// 标签TABS页面
 import { TabsPage } from '../pages/tabs/tabs';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
-    HomePage,
-    NewsPage,
-    ChatPage,
-    PersonalPage
+    LocationPage,
+    KnowledgePage,
+    ChatroomPage,
+    RobotPage,
+    PersonalPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    ComponentsModule
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage,
-    HomePage,
-    NewsPage,
-    ChatPage,
-    PersonalPage
+    LocationPage,
+    KnowledgePage,
+    ChatroomPage,
+    RobotPage,
+    PersonalPage,
+    TabsPage
   ],
   providers: [
     StatusBar,

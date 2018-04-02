@@ -1,0 +1,67 @@
+page-register {
+    height: 100%;
+    width: 100%;
+    background-color: bColor();
+    background-image: url("../assets/imgs/loginbg1.gif");
+    background-size: r(750px) r(1334px);
+    display: block;
+    .register-page {
+        padding: r(22px);
+        font-size: r(24px); // 标题
+        h1.logo {
+            margin-top: r(130px);
+            margin-bottom: 0;
+            font-weight: 700;
+            text-align: center;
+            font-size: r(56px);
+            text-shadow: r(5px) r(5px) r(5px) #66ccff;
+            color: #FFF;
+        }
+
+        .form{
+            margin-top: r(80px);
+            .username,.password,.submit{
+             
+                // background: #000;
+                text-align: center;
+                border-radius: r(11px);
+                input{
+                    display: block;
+                    outline: 0 none;
+                    border: 0 none;
+                    background: transparent;
+                    height: r(110px);
+                    width: 100%;
+                    border-radius: r(11px);
+                    color:fColor();
+                    font-size: r(36px);
+                }
+                .user-input{
+                   
+                }
+                .pwd-input{
+                  
+                }
+                .submit-input{
+                    height: r(80px);
+                    background-color: rgba(18,183,245,0.7);
+                    // opacity: 0.7;
+                    color: #fff;
+                    letter-spacing: r(10px);
+                }
+
+            }
+             
+        }
+        .login{
+ 
+            margin-top: r(40px);
+            color: fColor();
+            // background: #000;
+            display: block;
+            height: r(100px);
+            font-size: r(36px);
+        }
+
+    }
+}

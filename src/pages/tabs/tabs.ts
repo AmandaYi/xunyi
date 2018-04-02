@@ -1,42 +1,27 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component } from '@angular/core';
 
-// 引入了这个之后 就一直循环不显示任何内容, 
-import { Tabs } from 'ionic-angular';
-
-
-// 首页
-import { HomePage } from "../home/home";
-// 新闻
-import { NewsPage } from "../news/news";
-// 聊天
-import { ChatPage } from "../chat/chat";
+// 互相情侣定位
+import { LocationPage } from '../location/location';
+// 恋爱小知识
+import { KnowledgePage } from '../knowledge/knowledge';
+// 聊天功能
+import { ChatroomPage } from '../chatroom/chatroom';
+// 机器人聊天
+import { RobotPage } from '../robot/robot';
 // 个人中心
-import { PersonalPage } from "../personal/personal";
-
+import { PersonalPage } from '../personal/personal';
 @Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html',
+  templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  constructor(private navCtrl: NavController) {
-   
+  tab1Root = LocationPage;
+  tab2Root = KnowledgePage;
+  tab3Root = ChatroomPage;
+  tab4Root = RobotPage;
+  tab5Root = PersonalPage;
+
+  constructor() {
+
   }
-
-  @ViewChild('myTabs') tabRef;
-
-
-  // 页面绑定
-  tab1Root = PersonalPage;
-  tab2Root = NewsPage;
-  tab3Root = ChatPage;
-  tab4Root = PersonalPage;
-
-  // 页面初始化
-  switchTabs() {
-    this.navCtrl.push(NewsPage);
-  }
-  
-
 }
