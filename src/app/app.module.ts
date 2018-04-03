@@ -30,7 +30,26 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsHideOnSubPages: 'true',//所有子页面tabs隐藏
+      backButtonText: '<',
+      iconMode: 'ios',
+      mode: 'ios', //默认为ios样式
+      // cache: false,             //禁止应用缓存
+      autoFocusassist: false,   //自动聚焦
+      scrollAssist: false,      // 禁止智能滚动
+      tabsHighlight: false,      //是否在选择该选项卡时显示高亮线。
+
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
+      tabsPlacement: 'bottom',
+      pageTransition: 'ios-transition',
+      backButtonIcon: 'backicon'
+
+      // backButtonIcon:'arrow-back'
+      // 后面这两是应对手机键盘弹出时会把界面撑上去的问题
+    })
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +64,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
