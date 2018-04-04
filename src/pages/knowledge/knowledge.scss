@@ -3,35 +3,144 @@ page-knowledge {
     display: block;
     background: #ebebeb;
     .knowledge-list{
+        margin: 0 auto;
         display: block;
         padding-left: r(22px);
         padding-right: r(22px);
         width: r(750px);  
         height: r(500px);
-     .item{   
-        margin: 0 auto;
+ 
+        // 偶数
+     .item-even{   
+        margin-top: r(100px);
         height: r(500px);
+        width: r(706px);
+        position: relative;
+        // background: #000;
         display: block;        
          .thumbnail{
             display: block;
             width: 100%;
             height: r(500px);
-            background-color:#000;
-            filter:Alpha(Opacity=80);
-            opacity:0.8;
+   
 
             .thumbnail-img{
                 display: block;
                 width: 100%;
-                
+                // height: r(500px);
                 // object-fit:cover;
+
             }
+            
+            &::after{
+                content:'';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 500;
+                // background: #000;
+                width: r(706px);
+                height: r(500px);
+                /* 旧语法，带前缀并且已经废弃，以支持老版本的浏览器 */
+                background: -prefix-linear-zgradient(top, #ffffff, #959595); 
+
+                /* 新语法，不带前缀，以支持标准兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
+                background: linear-gradient(to bottom, #ffffff, #000000);
+                // background: transparent;
+                // background-color:#000;
+                filter:Alpha(Opacity=35);
+                opacity:0.35; 
+            }
+
+            
          }
          .title{
-
+             position: absolute;
+             z-index: 1000;
+            bottom:r(38px);
+            left: 0;
+            margin: 0 auto;
+            font-size: r(36px);
+            text-align: left;
+            text-indent: 2em;
+            padding-left: r(44px);
+            padding-right: r(44px);
+            color: #fff;
+            font-weight: bold;
          }
          .desc{}
      }
+
+    //  奇数
+    .item-odd{  
+        height: r(220px);
+        width: r(706px); 
+        background: #000;
+       
+        margin-top: r(100px);
+        // height: r(500px);
+        // width: r(706px);
+        // position: relative;
+        // background: #000;
+        display: block;        
+         .thumbnail{
+            display: block;
+            float: right;
+            width: r(140px);
+            margin-top: 0;
+         
+            
+   
+
+            .thumbnail-img{
+                display: block;
+                width: 100%;
+                // height: r(500px);
+                // object-fit:cover;
+
+            }
+            
+            // &::after{
+            //     content:'';
+            //     display: block;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     z-index: 500;
+            //     // background: #000;
+            //     width: r(706px);
+            //     height: r(500px);
+            //     /* 旧语法，带前缀并且已经废弃，以支持老版本的浏览器 */
+            //     background: -prefix-linear-zgradient(top, #ffffff, #959595); 
+
+            //     /* 新语法，不带前缀，以支持标准兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
+            //     background: linear-gradient(to bottom, #ffffff, #000000);
+            //     // background: transparent;
+            //     // background-color:#000;
+            //     filter:Alpha(Opacity=35);
+            //     opacity:0.35; 
+            // }
+
+            
+         }
+         .title{
+            //  position: absolute;
+            //  z-index: 1000;
+            // bottom:r(38px);
+            // left: 0;
+            // margin: 0 auto;
+            // font-size: r(36px);
+            // text-align: left;
+            // text-indent: 2em;
+            // padding-left: r(44px);
+            // padding-right: r(44px);
+            // color: #fff;
+            // font-weight: bold;
+         }
+         .desc{}
+     }
+
     }
 }
 }
