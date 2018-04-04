@@ -17,14 +17,15 @@ odd  奇数代表1 3 5 7 9 11 -->
 <!-- 按照偶数和奇数的文章进行布局 -->
 <!-- 根据索引改变li的类名,从而达到奇数和偶数文章显示不同 -->
 <ion-content class="knowledge-page">
-    <ul class="knowledge-list">
-      <li class="item-odd">
-        <div class="thumbnail">
+  <ul class="knowledge-list">
+    <li tarpper (click)="pushKnowledgeDetailPage($event,knowledge.id)" [ngClass]="{'item':true,'item-even':i%2==0,'item-odd':i%2==1}"
+      *ngFor="let knowledge of knowledges;let i = index">
+      <h2 class="title">{{knowledge.title}}</h2>
+      <div class="thumbnail">
+        <div class="box-img">
           <img class="thumbnail-img" src="assets/imgs/knowledge.png" alt="">
         </div>
-        <h2 class="title">标 题标题标题</h2>
-        <!-- <p class="desc">一句话描述</p> -->
-      </li>
-      
-    </ul>
+      </div>
+    </li>
+  </ul>
 </ion-content>

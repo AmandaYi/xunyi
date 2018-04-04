@@ -10,12 +10,13 @@ import { ChatroomPage } from '../chatroom/chatroom';
 import { RobotPage } from '../robot/robot';
 // 个人中心
 import { PersonalPage } from '../personal/personal';
+
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = KnowledgePage;
+  tab1Root = LocationPage;
   tab2Root = KnowledgePage;
   tab3Root = ChatroomPage;
   tab4Root = RobotPage;
