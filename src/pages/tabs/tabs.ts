@@ -15,7 +15,7 @@ import { PersonalPage } from '../personal/personal';
 })
 export class TabsPage {
 
-  tab1Root = LocationPage;
+  tab1Root = KnowledgePage;
   tab2Root = KnowledgePage;
   tab3Root = ChatroomPage;
   tab4Root = RobotPage;

@@ -1,3 +1,37 @@
 page-knowledge {
+.knowledge-page{
+    display: block;
+    background: #ebebeb;
+    .knowledge-list{
+        display: block;
+        padding-left: r(22px);
+        padding-right: r(22px);
+        width: r(750px);  
+        height: r(500px);
+     .item{   
+        margin: 0 auto;
+        height: r(500px);
+        display: block;        
+         .thumbnail{
+            display: block;
+            width: 100%;
+            height: r(500px);
+            background-color:#000;
+            filter:Alpha(Opacity=80);
+            opacity:0.8;
 
+            .thumbnail-img{
+                display: block;
+                width: 100%;
+                
+                // object-fit:cover;
+            }
+         }
+         .title{
+
+         }
+         .desc{}
+     }
+    }
+}
 }

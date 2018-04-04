@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>knowledge</ion-title>
+    <ion-title>恋爱常谈</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-
+<!-- Even 偶数代表0 2 4 6 8 10 
+odd  奇数代表1 3 5 7 9 11 -->
+<!-- 按照偶数和奇数的文章进行布局 -->
+<!-- 根据索引改变ion-content的类名,从而达到奇数和偶数文章显示不同 -->
+<ion-content class="knowledge-page">
+    <ul class="knowledge-list knowledge-list-even">
+      <li class="item">
+        <div class="thumbnail">
+          <img class="thumbnail-img" src="assets/imgs/knowledge.png" alt="">
+        </div>
+        <h2 class="title">标题</h2>
+        <p class="desc">一句话描述</p>
+      </li>
+    </ul>
 </ion-content>

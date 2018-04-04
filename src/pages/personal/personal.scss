@@ -1,5 +1,139 @@
 page-personal {
 
 
+    // 头像
+    .personal-page{
+        
+        .banner {
+            position: relative;
+            width: r(750px);
+            height: r(470px);
+            background-image: url("../assets/imgs/mine-banner.png");
+            background-size: r(750px) r(470px); // 头像样式
+            .avatar-item {
+                text-align: center;
+                .avatar-icon {
+                    margin: 0 auto;
+                    display: block;
+                    width: r(150px);
+                    padding-top: r(188px);
+                    img {
+                        display: block;
+                        width: r(150px);
+                        height: r(150px);
+                        border-radius: 50%;
+                    }
+                }
+                .avatar-nickname {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: r(30px);
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #2e3133;
+                    margin-top: r(30px);
+                }
+                .avatar-signature {
+                    margin-top: r(22px);
+                    font-size: r(24px);
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: rgba(162, 166, 168, 0.5);
+                }
+            }
+            padding-bottom: r(30px);
+        }
+
+
+        // .avatar{
+        //     height: r(500px);
+        //     width: r(750px);
+        //     background: #ff0;
+        //     padding-top: r(110px);
+        //     .avatar-img{
+        //         margin: 0 auto;
+           
+        //         display: block;
+        //         width: r(120px);
+        //         height: r(120px);
+        //         background: #000;
+        //         border-radius: 50%;
+        //     }
+        //     .nickname{
+        //         margin-top: 0;
+        //         margin-bottom: 0;
+        //         font-size: r(50px);
+        //     }
+        // }
+    }
+    .mine-list {
+        margin-top: r(22px);
+        .item {
+            // padding-left: r(97px);
+            height: r(100px);
+            line-height: r(100px);
+            background-color: #ffffff;
+            font-size: r(30px);
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #2e3133;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: r(22px);
+            .icon {
+                display: block;
+                width: r(56px);
+                height: r(56px);
+                background-size: r(56px) r(56px);
+                margin-right: r(18px);
+            }
+            .btn-right {
+                width: r(30px);
+                height: r(30px);
+                background-image: url("../assets/imgs/btn_right.svg");
+                background-size: r(30px) r(30px);
+                position: absolute;
+                right: r(22px);
+            }
+            .icon0 {
+                background-image: url("../assets/imgs/mine-icon1.png")
+            }
+            .icon1 {
+                background-image: url("../assets/imgs/mine-icon2.png")
+            }
+            .icon2 {
+                background-image: url("../assets/imgs/mine-icon3.png")
+            }
+            .icon3 {
+                background-image: url("../assets/imgs/mine-icon4.png")
+            }
+            .icon4 {
+                background-image: url("../assets/imgs/mine-icon5.png")
+            }
+            .icon5 {
+                background-image: url("../assets/imgs/mine-icon6.png")
+            }
+        }
+        .item3 {
+            margin-top: r(22px);
+        }
+        .item0,
+        .item1,
+        .item3 {
+            border-bottom: 1px solid #dde0e4;
+        }
+    }
+    // 项目列表
+    .personal-list{
+        .item{
+
+        }
+    }
     
 }
