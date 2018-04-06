@@ -1,3 +1,61 @@
 page-knowledge-detail {
-
+    height: 100%;
+    width: 100%;
+    display: block;
+    .knowledge-detail-page {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-image: url("../assets/imgs/knowdetailbg.gif");
+        background-size: r(750px) r(1334px);
+        .knowledge-detail {
+            // background: #ff0;
+            padding-left: r(40px);
+            padding-right: r(40px);
+            padding-top: r(54px);
+            font-size: r(30px); // 标题
+            display: block;
+            .knowledge-title {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: r(46px);
+                color: #f25d8e;
+                font-weight: bold;
+            } // 作者
+            .publish-information {
+                margin-top: r(20px);
+                font-size: r(36px); // 时间,作者,分类
+                .publish-time {
+                    color: #8c8c8c;
+                }
+                .publish-author {
+                    color: #66ccff;
+                }
+                .publish-category {
+                    color: #fff;
+                }
+            } // 内容
+            .content {
+                color: #000;
+                font-size: r(32px);
+                line-height: r(64px);
+                text-indent: 2em;
+                border-top: 2px solid #66ccff;
+                border-bottom: 2px solid #66ccff;
+                padding-top: r(22px);
+                padding-bottom: r(22px);
+                img {
+                    width: r(680px);
+                    text-align: center;
+                }
+            } // 内容结束横线end
+            .detail-end {
+                text-align: center;
+                font-size: r(50px);
+                color: #f25d8e;
+                margin-top: r(22px);
+                margin-bottom: r(22px);
+            }  
+        }
+    }
 }

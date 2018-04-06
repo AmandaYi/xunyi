@@ -1,3 +1,24 @@
 page-robot {
+ 
 
+        .chatroom-page{
+            position: relative;
+            display: block;
+            // background: #ff0;
+            background-image: url("../assets/imgs/robotbg.gif");
+            background-size: r(750px) r(1334px);
+            overflow-y: scroll;
+            .chatroom{
+        
+                // padding-top: r(30px);
+                padding-left: r(30px);
+                padding-right: r(30px);
+                margin-bottom: r(100px);
+                display: block;
+         
+           
+            }
+            }
+  
+        
 }

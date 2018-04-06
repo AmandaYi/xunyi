@@ -1,16 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavParams } from 'ionic-angular';
- 
-/**
- * 
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage({
-  name:"KnowledgeDetailPage"
-})
+import {  NavParams } from 'ionic-angular';
+// @IonicPage({
+//   name:"KnowledgeDetailPage"
+// })
 @Component({
   selector: 'page-knowledge-detail',
   templateUrl: 'knowledge-detail.html',
@@ -21,6 +13,7 @@ export class KnowledgeDetailPage {
    this.getKnowledgeId()
   }
 //  点击的知识文章id
+
   knowledgeId:number;
   // 得到参数
 

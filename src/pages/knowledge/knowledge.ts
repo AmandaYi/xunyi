@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
- 
+ import {KnowledgeDetailPage} from "../knowledge-detail/knowledge-detail"
 @Component({
   selector: 'page-knowledge',
   templateUrl: 'knowledge.html',
@@ -16,7 +16,7 @@ export class KnowledgePage {
 //  进入到详情页面
   pushKnowledgeDetailPage(event,knowledgeId){
     console.log(event);
-    this.navController.push("KnowledgeDetailPage",{
+    this.navController.push(KnowledgeDetailPage,{
       knowledgeId
     });
   

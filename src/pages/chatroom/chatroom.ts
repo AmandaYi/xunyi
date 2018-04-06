@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Content } from 'ionic-angular';
 
 
 @Component({
@@ -8,10 +9,8 @@ import { Component } from '@angular/core';
 export class ChatroomPage {
 
   constructor() {
-  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ChatroomPage');
   }
-
+ 
+ 
 }

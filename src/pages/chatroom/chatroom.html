@@ -7,12 +7,27 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>chatroom</ion-title>
+    <ion-title>另一半</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="chatroom-page" scrollDownOnLoad="true">
+  <div class="chatroom" >
+<div class="chat-item">
+<!-- 别人发送的信息 -->
+<chat-others></chat-others>
+<!-- 自己发送的信息 -->
+<chat-self></chat-self>
+<chat-others></chat-others>
+<chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self><chat-self></chat-self>
+</div>
 
+ 
+
+
+  </div>
+  <!-- 最下边的发送框 -->
+  <send-input></send-input>
 </ion-content>

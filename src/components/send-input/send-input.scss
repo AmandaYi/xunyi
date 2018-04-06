@@ -1,0 +1,54 @@
+send-input {
+     // 发送文本框口
+     .chat-input{
+        position: fixed;
+        bottom:r(100px);
+        left: 0;
+        width: r(750px);
+        .send-form{
+
+         
+            display:block;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: r(750px);
+            background: #f00;
+               //  文本
+            .send-content{
+              
+        
+                display: block;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-right: r(66px) ;
+                padding-left: r(22px) ;
+                border: 0;
+                outline: 0 none;
+                resize: none;
+                font-size: r(36px);
+              
+                width: r(750px);
+                letter-spacing: r(3px);
+                font-weight: normal;
+                color:#222222;
+          
+            }
+
+            // 发送按钮
+            .btn-submit{
+                display: block;
+                width: r(66px);
+                height: r(100px);
+                line-height: r(100px);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 999;
+                font-size: r(50px);
+               
+            }
+        }
+     
+
+    }
+}

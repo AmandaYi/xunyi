@@ -17,7 +17,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
- 
+import { ComponentsModule } from '../components/components.module';
+import { KnowledgeDetailPage } from '../pages/knowledge-detail/knowledge-detail';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,11 +29,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ChatroomPage,
     RobotPage,
     PersonalPage,
-    TabsPage
+    TabsPage,
+    KnowledgeDetailPage
   ],
   imports: [
     BrowserModule,
- 
+    ComponentsModule,
     IonicModule.forRoot(MyApp, {
       tabsHideOnSubPages: 'true',//所有子页面tabs隐藏
       backButtonText: '<',
@@ -60,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ChatroomPage,
     RobotPage,
     PersonalPage,
-    TabsPage
+    TabsPage,
+    KnowledgeDetailPage
   ],
   providers: [
     StatusBar,

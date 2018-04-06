@@ -1,0 +1,49 @@
+chat-others {
+
+
+    .chat-others{
+        display:block;
+        margin-top: r(80px);
+        // background: #f00;
+//         width: 100%;
+//         position: relative;
+        .avatar{
+            float:left;
+//             margin: 0 auto;
+            display: block;
+//             position: absolute;
+//             top: 0;
+            img {
+                display:block;
+                width: r(110px);
+                height: r(110px);
+                margin-top: 0;
+                margin-bottom: 0;
+                border-radius: 50%;
+            }
+        }
+
+        .chat-content{
+//             position: absolute;
+//             top:0;
+//             left: r(136px);
+            // margin-left: r(176px);
+            // display:inline-block;
+            float:left;
+
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: r(22px);
+            font-size: r(28px);
+            // line-height: r(46px);
+            max-width: r(380px);
+            // min-width: r(110px);
+
+            background: #ffffff;
+            padding: r(24px) r(20px);
+            border-radius: r(12px);
+            color:#212121;
+
+        }
+    }
+}
