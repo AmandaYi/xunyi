@@ -1,0 +1,17 @@
+{
+  "name": "xunyiserve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "mongoose": "^5.0.13"
+  }
+}

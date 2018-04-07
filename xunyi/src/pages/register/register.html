@@ -1,0 +1,14 @@
+<div class="register-page">
+  <h1 class="logo">注册</h1>
+  <form class="form" [formGroup]="registerFormModel"  (submit)="onSubmit()">
+
+    <p class="username"><input formControlName="username" class="user-input" type="text" placeholder="情侣号/小月号"/></p>
+    <div formGroupName="password">
+      <p class="password"><input  formControlName="firstPassword" class="pwd-input" type="text" placeholder="密码" /></p>
+      <p class="password"><input  formControlName="lastPassword" class="pwd-input" type="text" placeholder="再次输入密码" /></p>
+    </div>
+    <p class="submit"><input class="submit-input" type="submit" value="注册" ></p>
+  </form>
+  <!-- {{registerFormModel.value|json}} -->
+  <p class="login"  (touchend)="dismissToLogin()">返回登陆</p>
+</div>

@@ -9,14 +9,16 @@ export class PersonalPage {
 
   constructor(
     private modalCtrl: ModalController) {
-
-    this.checkLogin();
+ 
+    
 
   }
 
 
 
-
+  ionViewDidEnter(){
+  this.checkLogin();
+}
   // 用户ID
   userId: number;
 

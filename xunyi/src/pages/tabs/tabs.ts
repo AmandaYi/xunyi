@@ -21,6 +21,8 @@ export class TabsPage {
   tab3Root = ChatroomPage;
   tab4Root = RobotPage;
   tab5Root = PersonalPage;
+  // tab5Root = "RegisterPage";
+  
 
   constructor() {
 
