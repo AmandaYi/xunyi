@@ -79,9 +79,13 @@ export class RegisterPage {
           }
           if(responent.state==1){
             this.nativeService.showAlert("注册成功");
-            this.viewCtrl.dismiss();
+            console.log(responent.userId);
+            // this.viewCtrl.dismiss();
+      
             // 写入lo
-            // localStorage
+            let result = localStorage.setItem("userId",responent.userId);
+            console.log(result);
+            this.dismissToLogin();
           }
         }
       )

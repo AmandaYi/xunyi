@@ -32,6 +32,23 @@ export class NativeServiceProvider {
     alert.present();
   }
 
+  showConfirm(text: string = '确定吗',fn_y=()=>{},fn_n=()=>{}) {
+    let alert = this.alertCtrl.create({
+      title: text,
+      buttons: [
+        {
+          text: '是',
+  
+          handler: fn_y
+        },
+        {
+          text: '否',
+          handler:fn_n
+        }
+      ]
+    });
+    alert.present();
+  }
   /**
  * 黑色闪窗
  */

@@ -1,0 +1,11 @@
+<div class="login-page">
+  <h1 class="logo">登录</h1>
+  <form class="form" [formGroup]="loginFormModel" (submit)="onSubmit()">
+
+    <p class="username"><input formControlName="username" class="user-input" type="text" placeholder="情侣号/小月号"/></p>
+    <p class="password"><input formControlName="password" class="pwd-input" type="text" placeholder="密码" /></p>
+    <p class="submit"><input class="submit-input" type="submit" value="登录" ></p>
+  </form>
+
+  <p class="register" (touchend)="registerPageModal()">注册帐号</p>
+</div>

@@ -20,6 +20,15 @@ export class ApiServiceProvider {
     return this.http.postFormData('/api/register', param)
   }
 
+   
+  login(username,password) {
+    let param = {
+      username,
+      password
+        }
+    return this.http.postFormData('/api/login', param)
+  }
+
   //  list(code) {
   //   let param = {
   //     code: code,

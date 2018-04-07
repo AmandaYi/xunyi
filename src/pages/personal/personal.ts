@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {  ModalController} from 'ionic-angular';
+import { NativeServiceProvider } from '../../providers/native-service/native-service';
 
 @Component({
   selector: 'page-personal',
@@ -8,17 +9,18 @@ import {  ModalController} from 'ionic-angular';
 export class PersonalPage {
 
   constructor(
-    private modalCtrl: ModalController) {
- 
+    private modalCtrl: ModalController,
+  private nativeService: NativeServiceProvider) {
+
     
 
   }
 
-
-
-  ionViewDidEnter(){
-  this.checkLogin();
+ionViewDidEnter(){
+  this.checkLogin()
 }
+
+ 
   // 用户ID
   userId: number;
 
@@ -26,8 +28,11 @@ export class PersonalPage {
   // 检查值,如果用户id存在,那么进入正常进入个人中心,如果不存在打开登录的模态窗口
   checkLogin() {
     // console.log(1);
-    this.userId = Number(localStorage.getItem("userId"));
-    if (!this.userId) {
+   
+    if (localStorage.getItem("userId")) {
+      console.log("用户登陆");
+      return;
+    }else{
       this.loginPageModal();
     }
     
@@ -39,5 +44,19 @@ export class PersonalPage {
     });
     loginModal.present();
   }
+
+
+  // 退出登录
+  unLogin(){
+    this.nativeService.showConfirm("您确定退出登陆吗?",()=>{
+      localStorage.removeItem("userId");
+      this.loginPageModal();
+    },()=>{
+      console.log("呵呵");
+    })
+  }
+
+  
+ 
  
 }
