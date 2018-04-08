@@ -6,8 +6,8 @@
       <div class="avatar-icon">
         <img class="avatar-img" src="assets/imgs/avatar.png" alt="">
       </div>
-      <h3 class="avatar-nickname">昵称</h3>
-      <p class="avatar-signature">签名</p>
+      <h3 class="avatar-nickname">{{userInfo?.nickname}}</h3>
+      <p class="avatar-signature">{{userInfo?.signature}}</p>
     </div>
 
   </div>
@@ -24,8 +24,8 @@
 
 
  <div class="mine-list">
-    <!-- <li class="item item0" ><span class="icon icon0"></span>个人资料<span class="icon-jiantouyou iconfont btn-right"></span></li>
-    <li class="item item1"><span class="icon icon1"></span>收藏文章<span class="icon-jiantouyou iconfont btn-right"></span></li>
+   <li class="item item0"  tappable (click)="pushPersonalDetailPage()"><span class="icon icon0"></span>个人资料<span class="icon-jiantouyou iconfont btn-right"></span></li>
+   <!--   <li class="item item1"><span class="icon icon1"></span>收藏文章<span class="icon-jiantouyou iconfont btn-right"></span></li>
     <li class="item item2" ><span class="icon icon2"></span>曾经去过<span class="icon-jiantouyou iconfont btn-right"></span></li>
     <li class="item item3"><span class="icon icon3"></span>投诉建议<span class="icon-jiantouyou iconfont btn-right"></span></li>
     <li class="item item4"><span class="icon icon4"></span>关于我们<span class="icon-jiantouyou iconfont btn-right"></span></li> -->

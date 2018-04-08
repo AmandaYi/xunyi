@@ -29,12 +29,34 @@ export class ApiServiceProvider {
     return this.http.postFormData('/api/login', param)
   }
 
-  //  list(code) {
-  //   let param = {
-  //     code: code,
-  //   }
-  //   return this.http.get('api/shop/home/list/', param)
-  // }
+
+  
+  // 更新按钮
+  
+  searchuser(userId) {
+    let param = {
+      userId
+    }
+    return this.http.postFormData('/api/searchuser', param)
+  }
+
+
+
+
+  // 更新按钮
+  
+   updateuser(userId,nickname,signature,loverId) {
+    let param = {
+      userId,
+
+      nickname,
+
+      signature,
+ 
+      loverId,
+    }
+    return this.http.postFormData('/api/updateuser', param)
+  }
 
 
   // list(code) {

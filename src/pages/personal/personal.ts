@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {  ModalController} from 'ionic-angular';
+import {  ModalController, NavController} from 'ionic-angular';
 import { NativeServiceProvider } from '../../providers/native-service/native-service';
+import { ApiServiceProvider } from '../../providers/api-service/api-service';
 
 @Component({
   selector: 'page-personal',
@@ -10,16 +11,32 @@ export class PersonalPage {
 
   constructor(
     private modalCtrl: ModalController,
-  private nativeService: NativeServiceProvider) {
+    private apiService:ApiServiceProvider,
+  private nativeService: NativeServiceProvider,
 
+private navController:NavController) {
+this.postUserInfo();
     
 
   }
 
 ionViewDidEnter(){
   this.checkLogin()
+ this.postUserInfo()
 }
 
+userInfo:any;
+postUserInfo(){
+  let userId = localStorage.getItem("userId");
+  this.apiService.searchuser(userId)
+  .map(res=>res.json())
+  .subscribe(
+    item=>{
+      // console.log(item)
+      this.userInfo = item.userInfo;
+    }
+  )
+}
  
   // 用户ID
   userId: number;
@@ -57,6 +74,9 @@ ionViewDidEnter(){
   }
 
   
- 
+//  进入个人中心
+pushPersonalDetailPage(){
+  this.navController.push("PersonalDetailPage")
+}
  
 }

@@ -1,0 +1,71 @@
+page-personal-update {
+
+ 
+        font-size: r(30px);
+    
+        display:block;
+        width: 100%;
+        height:100%;
+    .personal-detail-page{
+            display:block;
+            width: 100%;
+            height:100%;
+        .personal-detail{
+            display:block;
+            width: 100%;
+            height:100%;
+            background: #fff;
+            padding-left: r(22px);
+            padding-right: r(22px);
+            margin-top: 0;
+            .item{
+                margin-top: 0;
+    
+                margin-bottom: 0;
+                color: #212121;
+                font-weight: normal;
+                height: r(110px);
+                line-height: r(110px);
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                .text{
+                    font-size: r(27px);
+                    padding-top: r(22px);
+                    padding-bottom: r(22px);
+                 position: absolute;
+                 width:r(420px);
+                 display: block;
+                 height: r(80px);
+                 
+                 left: r(120px);
+                 top:r(15px);
+    
+                 background: #fff;
+                 border:0 none;
+                 outline: 0 none;
+                }
+                input[type=radio]{
+                    margin-left: r(30px);
+                }
+            }
+            .update{
+     
+                margin-top: 0;
+                color: #fff;
+                width:r(700px);
+                background: #66ccff;
+                text-align: center;
+                line-height: r(100px);
+                display: block;
+                height: r(100px);
+                font-size: r(36px);
+                border-radius: r(10px);
+            }
+        }
+    
+    
+    
+        }
+   
+    
+}

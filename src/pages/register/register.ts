@@ -27,9 +27,11 @@ export class RegisterPage {
 
 
 
-  dismissToLogin() {
-    // let data = { 'foo': 'bar' };
-    this.viewCtrl.dismiss();
+  dismissToLogin(stateSussess:any=0) {
+ 
+    this.viewCtrl.dismiss({
+      stateSussess:stateSussess
+    });
 
   }
 
@@ -43,17 +45,19 @@ export class RegisterPage {
   // 响应式表单
   registerFormModel: FormGroup = new FormGroup({
     username: new FormControl(),
-    password: new FormGroup({
-      firstPassword: new FormControl(),
-      lastPassword: new FormControl()
-    })
+   password: new FormControl()
+    
+    // password: new FormGroup({
+      // firstPassword: new FormControl(),
+      // lastPassword: new FormControl()
+     
   }, )
 
   // 执行注册
   onSubmit() {
    let username= this.registerFormModel.value.username;
-   let firstPassword= this.registerFormModel.value.password.firstPassword;
-   let lastPassword=this.registerFormModel.value.password.lastPassword;
+   let password= this.registerFormModel.value.password;
+  //  let lastPassword=this.registerFormModel.value.password.lastPassword;
   //  用户名表达式
  
     // console.log(this.registerFormModel.value)
@@ -63,15 +67,15 @@ export class RegisterPage {
  
       return ;
     }
-    if ( (!firstPassword) && (!lastPassword) && (firstPassword==lastPassword)) {
-      this.nativeService.showBlock("密码有误或者不相同",1000)
+    if ( !password) {
+      this.nativeService.showBlock("密码有误",1000)
  
       return ;
     }
     this.apiService.register(this.registerFormModel.value.username,
-      this.registerFormModel.value.password.firstPassword)
+      this.registerFormModel.value.password)
       .map(r=>r.json())
-      .subscribe(
+      .subscribe( 
         responent => {
           console.log(responent.state);
           if(responent.state==0){
@@ -85,7 +89,7 @@ export class RegisterPage {
             // 写入lo
             let result = localStorage.setItem("userId",responent.userId);
             console.log(result);
-            this.dismissToLogin();
+            this.dismissToLogin("1");
           }
         }
       )

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the PersonalDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>修改个人资料</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content class="personal-detail-page">
+  <!-- 用户id --> 
+  <form class="personal-detail"  [formGroup]="personalDetailFormModel" (submit)="onSubmit()">
+  
+    <p class="item">您的ID<input class="text" [value]="userId"  type="text" formControlName="userId"></p>
+  
+    <p class="item">昵称<input class="text" type="text" formControlName="nickname"></p>
+  
+    <p class="item">签名<input class="text" type="text" formControlName="signature"></p>
+  
+    <!-- <p class="item" formGroupName="userSex">您的性别<input formControlName="man" type="radio" value="0" name="man">男<input formControlName="woman" value="1" type="radio" name="woman">女</p> -->
+  
+    <p class="item">伴侣ID<input formControlName="loverId" class="text" type="text" placeholder="只有一次修改机会哦"></p>
+    <!-- <p class="item">伴侣ID<input  class="text" type="submit" ></p> -->
+    <p class="update" (touchend)="onSubmit()">保存</p>
+  </form>
+  
+  </ion-content>
+  
