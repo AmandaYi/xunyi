@@ -26,3 +26,8 @@ export const APP_DOWNLOAD = '';//app网页下载地址,用于ios升级或android
 export let AGENT: any = "Android";
     // export let userAgent="Ios";
     // export let userAgent="Wx";
+// 聊天地址
+
+// 聊天声明
+// export const SOCKET_URL="http://127.0.0.1:3000";
+ 

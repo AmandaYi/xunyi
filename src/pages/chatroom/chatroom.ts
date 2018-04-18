@@ -1,8 +1,9 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, Output, Input } from '@angular/core';
 import { Content } from 'ionic-angular';
 
 // 聊天程序
-import { io } from 'socket.io';
+import { io } from 'socket.io-client';
+import { ApiServiceProvider } from '../../providers/api-service/api-service';
 declare let io;
 @Component({
   selector: 'page-chatroom',
@@ -10,10 +11,14 @@ declare let io;
 })
 export class ChatroomPage {
 
-  constructor() {
+  @Input() messages
+  constructor(
+    private apiService:ApiServiceProvider
+  ) {
 
   }
  
- socket = io();
+  
+ 
  
 }

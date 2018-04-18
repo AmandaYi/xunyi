@@ -1,6 +1,7 @@
 <div class="chat-input">
   <form class="send-form">
-    <textarea FormController (input)="changeHeight($event)" [(ngModel)]="selfWords"  class="send-content" name="selfWords"></textarea>
+    <!-- <textarea col="2" #textarea  (input)="changeHeight($event)" [(ngModel)]="selfWords"  class="send-content" name="selfWords"></textarea> -->
+    <textarea col="2" #textarea [(ngModel)]="selfWords"  class="send-content" name="selfWords"></textarea>
     <!-- 上传图片 -->
     <!-- <span class="btn-image"></span> -->
     <!-- 发送按钮 -->
